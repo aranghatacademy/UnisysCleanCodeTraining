@@ -22,6 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ClassNameAnalyzer.CodeFixes\ClassNameAnalyzer.CodeFixes.csproj" />
+    <ProjectReference Include="..\ClassNameAnalyzer.Package\ClassNameAnalyzer.Package.csproj" />
     <ProjectReference Include="..\ClassNameAnalyzer\ClassNameAnalyzer.csproj" />
   </ItemGroup>
 

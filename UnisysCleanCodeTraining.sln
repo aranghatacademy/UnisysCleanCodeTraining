@@ -33,6 +33,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{CF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AranghatClassLibrary", "AranghatClassLibrary\AranghatClassLibrary.csproj", "{E228A4AE-3410-4986-A20D-8C4760367AE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamingConventionsExtended", "NamingConventionsExtended\NamingConventionsExtended.csproj", "{985DD3CA-EB99-43E7-9CE1-5E4D114EFA60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemanticNamingConvention", "SemanticNamingConvention\SemanticNamingConvention.csproj", "{B32140DF-71DB-4383-82D6-0A05CE94D6B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{E228A4AE-3410-4986-A20D-8C4760367AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E228A4AE-3410-4986-A20D-8C4760367AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E228A4AE-3410-4986-A20D-8C4760367AE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{985DD3CA-EB99-43E7-9CE1-5E4D114EFA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985DD3CA-EB99-43E7-9CE1-5E4D114EFA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985DD3CA-EB99-43E7-9CE1-5E4D114EFA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985DD3CA-EB99-43E7-9CE1-5E4D114EFA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B32140DF-71DB-4383-82D6-0A05CE94D6B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B32140DF-71DB-4383-82D6-0A05CE94D6B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B32140DF-71DB-4383-82D6-0A05CE94D6B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B32140DF-71DB-4383-82D6-0A05CE94D6B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +116,8 @@ Global
 		{4031289D-1D8A-4B4F-BBE1-98E306837DC6} = {067A71E3-5B0B-4F70-9DFE-4E72BB0BAF9C}
 		{ABF0571D-4108-4852-8480-F19D795189C8} = {067A71E3-5B0B-4F70-9DFE-4E72BB0BAF9C}
 		{E228A4AE-3410-4986-A20D-8C4760367AE2} = {CF8C5349-350B-4863-8A3E-969B015FB146}
+		{985DD3CA-EB99-43E7-9CE1-5E4D114EFA60} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{B32140DF-71DB-4383-82D6-0A05CE94D6B0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B59D8D9C-8C2D-49D7-987F-36230AFE6AD6}
