@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamingConventionsExtended",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemanticNamingConvention", "SemanticNamingConvention\SemanticNamingConvention.csproj", "{B32140DF-71DB-4383-82D6-0A05CE94D6B0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LayeredNaming", "LayeredNaming", "{2AAE5745-6A06-477A-B5AC-9B9C06D94BED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api.bookstore.com", "api.bookstore.com\api.bookstore.com.csproj", "{C3766EF2-F876-4863-AD60-49D9686F5097}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,10 @@ Global
 		{B32140DF-71DB-4383-82D6-0A05CE94D6B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B32140DF-71DB-4383-82D6-0A05CE94D6B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B32140DF-71DB-4383-82D6-0A05CE94D6B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3766EF2-F876-4863-AD60-49D9686F5097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3766EF2-F876-4863-AD60-49D9686F5097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3766EF2-F876-4863-AD60-49D9686F5097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3766EF2-F876-4863-AD60-49D9686F5097}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -118,6 +126,7 @@ Global
 		{E228A4AE-3410-4986-A20D-8C4760367AE2} = {CF8C5349-350B-4863-8A3E-969B015FB146}
 		{985DD3CA-EB99-43E7-9CE1-5E4D114EFA60} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{B32140DF-71DB-4383-82D6-0A05CE94D6B0} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{C3766EF2-F876-4863-AD60-49D9686F5097} = {2AAE5745-6A06-477A-B5AC-9B9C06D94BED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B59D8D9C-8C2D-49D7-987F-36230AFE6AD6}
