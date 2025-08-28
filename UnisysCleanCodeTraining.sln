@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamesSpaceAnalyzer.Test", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NamesSpaceAnalyzer.Vsix", "NamesSpaceAnalyzer\NamesSpaceAnalyzer.Vsix\NamesSpaceAnalyzer.Vsix.csproj", "{ABF0571D-4108-4852-8480-F19D795189C8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{CF8C5349-350B-4863-8A3E-969B015FB146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AranghatClassLibrary", "AranghatClassLibrary\AranghatClassLibrary.csproj", "{E228A4AE-3410-4986-A20D-8C4760367AE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +83,10 @@ Global
 		{ABF0571D-4108-4852-8480-F19D795189C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABF0571D-4108-4852-8480-F19D795189C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ABF0571D-4108-4852-8480-F19D795189C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E228A4AE-3410-4986-A20D-8C4760367AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E228A4AE-3410-4986-A20D-8C4760367AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E228A4AE-3410-4986-A20D-8C4760367AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E228A4AE-3410-4986-A20D-8C4760367AE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +103,7 @@ Global
 		{389BB6F6-CC37-4470-8D56-CD7CC78A5F4A} = {067A71E3-5B0B-4F70-9DFE-4E72BB0BAF9C}
 		{4031289D-1D8A-4B4F-BBE1-98E306837DC6} = {067A71E3-5B0B-4F70-9DFE-4E72BB0BAF9C}
 		{ABF0571D-4108-4852-8480-F19D795189C8} = {067A71E3-5B0B-4F70-9DFE-4E72BB0BAF9C}
+		{E228A4AE-3410-4986-A20D-8C4760367AE2} = {CF8C5349-350B-4863-8A3E-969B015FB146}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B59D8D9C-8C2D-49D7-987F-36230AFE6AD6}
