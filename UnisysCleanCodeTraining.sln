@@ -50,6 +50,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day 2", "Day 2", "{C999C3E3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSmellType1", "CodeSmellType1\CodeSmellType1.csproj", "{5A7F8825-203E-4E98-90A5-949AB3156348}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidPrinciplsToCleanCode", "SolidPrinciplsToCleanCode\SolidPrinciplsToCleanCode.csproj", "{6170F2EA-DB58-4BF0-A736-E774B8F9534E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -120,6 +122,10 @@ Global
 		{5A7F8825-203E-4E98-90A5-949AB3156348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A7F8825-203E-4E98-90A5-949AB3156348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A7F8825-203E-4E98-90A5-949AB3156348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6170F2EA-DB58-4BF0-A736-E774B8F9534E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6170F2EA-DB58-4BF0-A736-E774B8F9534E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6170F2EA-DB58-4BF0-A736-E774B8F9534E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6170F2EA-DB58-4BF0-A736-E774B8F9534E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -145,6 +151,7 @@ Global
 		{2AAE5745-6A06-477A-B5AC-9B9C06D94BED} = {73F10403-CEC2-41C2-9FC7-E6C84C4782EF}
 		{C3766EF2-F876-4863-AD60-49D9686F5097} = {2AAE5745-6A06-477A-B5AC-9B9C06D94BED}
 		{5A7F8825-203E-4E98-90A5-949AB3156348} = {C999C3E3-E85C-4BB0-8C62-92FD079EF804}
+		{6170F2EA-DB58-4BF0-A736-E774B8F9534E} = {C999C3E3-E85C-4BB0-8C62-92FD079EF804}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B59D8D9C-8C2D-49D7-987F-36230AFE6AD6}

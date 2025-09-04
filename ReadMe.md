@@ -4,3 +4,8 @@
 3. Feature Envy: Move methods to the class they are most related to.
 4. Utility Hell: Avoid overusing utility classes; Consider using services and DI
 5. Opaque Return Types: Use boundry exception or better use Result<T> pattern.
+
+
+##Solid Principles in clean code
+
+1. Single Responsibility Principle 
