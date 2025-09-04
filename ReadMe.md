@@ -13,3 +13,9 @@
 2. Open Close Principle			   - Class or a Method must be open for extention but closed for modification
 
 3. Liskov Substitution Principle   - Derived classes must be substitutable for their base classes
+
+4. Interface Seggregation Principle - Insted of creating a mother of all interfaces. Create smaller focused interfaces 
+		so that the client can pick and choose the services.
+
+5. Dependency Inversion Principle - Highlevel modules must not depend on low level modules. Both must depend on abstractions.
+		Abstractions must not depend on details. Details must depend on abstractions.
