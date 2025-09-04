@@ -8,4 +8,8 @@
 
 ##Solid Principles in clean code
 
-1. Single Responsibility Principle 
+1. Single Responsibility Principle - A Class or a method only reason for its existance. In another words there 
+									 must only one reason to change a class or a method
+2. Open Close Principle			   - Class or a Method must be open for extention but closed for modification
+
+3. Liskov Substitution Principle   - Derived classes must be substitutable for their base classes
