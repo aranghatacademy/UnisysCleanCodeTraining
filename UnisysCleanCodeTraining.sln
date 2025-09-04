@@ -45,6 +45,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day 1", "Day 1", "{73F10403
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day 2", "Day 2", "{C999C3E3-E85C-4BB0-8C62-92FD079EF804}"
 	ProjectSection(SolutionItems) = preProject
+		\\Mac\Home\Downloads\CarRentalMessy.md = \\Mac\Home\Downloads\CarRentalMessy.md
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
