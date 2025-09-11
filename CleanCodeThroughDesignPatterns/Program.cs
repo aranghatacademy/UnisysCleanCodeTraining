@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using CleanCodeThroughDesignPatterns.ChainOfResponsibility;
 using CleanCodeThroughDesignPatterns.CommandPattern;
 using CleanCodeThroughDesignPatterns.ObserverPattern;
 using CleanCodeThroughDesignPatterns.StratagyPAttern;
@@ -59,7 +60,7 @@ temperatureSensor.SetTemperature(85);
 
 var textEditor = new TextEditor();
 textEditor.AppendText("Hello,");
-textEditor.Copy();*/
+textEditor.Copy();
 
 var textEditorClient = new TextEditorClient();
 
@@ -67,6 +68,19 @@ var appendTextCommand = new AppendTextCommand("Hello Workld");
 textEditorClient.ExecuteCommand(appendTextCommand);
 
 textEditorClient.ExecuteCommand(new DeleteTextCommand("Workld"));
-textEditorClient.ExecuteCommand(new ReplaceTextCommand("Workld", "World"));
+textEditorClient.ExecuteCommand(new ReplaceTextCommand("Workld", "World"));*/
 
+var approvalChain = new TeamLeader();
+
+approvalChain.SetNext(new Manager())
+             .SetNext(new Director());
+
+
+var purchangeRequest1 = new PurchaseRequest { Amount = 500, Description = "Office Supplies" };
+var purchangeRequest2 = new PurchaseRequest {  Amount = 5000, Description = "New Laptops" };
+var purchangeRequest3 = new PurchaseRequest { Amount = 20000, Description = "Office Renovation" };
+
+approvalChain.ProcessRequest(purchangeRequest1);
+approvalChain.ProcessRequest(purchangeRequest2);
+approvalChain.ProcessRequest(purchangeRequest3);
 
