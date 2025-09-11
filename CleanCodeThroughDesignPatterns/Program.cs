@@ -23,7 +23,7 @@ messageProcess.ExecuteStrategy(new Message { Content = "Test MEssage", Email = "
 var discountProcess = new StrategyContext<Order, decimal>(new PrimeMemberDiscountStrategy());
 var discount = discountProcess.ExecuteStrategy(new Order { OrderId = 1, Amount = 1000 });*/
 
-var temperatureSensor = new TemperatureObserverService();
+/*var temperatureSensor = new TemperatureObserverService();
 
 var alertSystem = new AlarmObserver();
 var smsSystem   = new SMSObserver();
@@ -36,4 +36,22 @@ temperatureSensor.RegisterObserver(fireStation);
 temperatureSensor.RegisterObserver(openDoorService);
 
 
-temperatureSensor.UpdateTemperature(85);
+temperatureSensor.UpdateTemperature(85);*/
+
+var temperatureSensor = new TemperatureSensor();
+temperatureSensor.UpdateEventHandler += (sender, temp) =>
+{
+    Console.WriteLine($"Temperature Sensor Event Triggered. Current Temperature: {temp.Temperature}. Time {temp.TimeStamp}");
+
+    new AlarmObserver().Update(temp.Temperature);
+    new SMSObserver().Update(temp.Temperature);
+    new FireStationObserver().Update(temp.Temperature);
+    new OpenEmergencyDoors().Update(temp.Temperature);
+};
+
+temperatureSensor.UpdateEventHandler += (sender, temp) =>
+{
+    Console.WriteLine("TEMP EVENT HANDLER 2");
+};
+
+temperatureSensor.SetTemperature(85);
