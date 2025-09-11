@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using CleanCodeThroughDesignPatterns.CommandPattern;
 using CleanCodeThroughDesignPatterns.ObserverPattern;
 using CleanCodeThroughDesignPatterns.StratagyPAttern;
 
@@ -38,7 +39,7 @@ temperatureSensor.RegisterObserver(openDoorService);
 
 temperatureSensor.UpdateTemperature(85);*/
 
-var temperatureSensor = new TemperatureSensor();
+/*var temperatureSensor = new TemperatureSensor();
 temperatureSensor.UpdateEventHandler += (sender, temp) =>
 {
     Console.WriteLine($"Temperature Sensor Event Triggered. Current Temperature: {temp.Temperature}. Time {temp.TimeStamp}");
@@ -55,3 +56,17 @@ temperatureSensor.UpdateEventHandler += (sender, temp) =>
 };
 
 temperatureSensor.SetTemperature(85);
+
+var textEditor = new TextEditor();
+textEditor.AppendText("Hello,");
+textEditor.Copy();*/
+
+var textEditorClient = new TextEditorClient();
+
+var appendTextCommand = new AppendTextCommand("Hello Workld");
+textEditorClient.ExecuteCommand(appendTextCommand);
+
+textEditorClient.ExecuteCommand(new DeleteTextCommand("Workld"));
+textEditorClient.ExecuteCommand(new ReplaceTextCommand("Workld", "World"));
+
+
