@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using CleanCodeThroughDesignPatterns.AdapterPAttern;
 using CleanCodeThroughDesignPatterns.ChainOfResponsibility;
 using CleanCodeThroughDesignPatterns.CommandPattern;
 using CleanCodeThroughDesignPatterns.ObserverPattern;
@@ -83,4 +84,7 @@ var purchangeRequest3 = new PurchaseRequest { Amount = 20000, Description = "Off
 approvalChain.ProcessRequest(purchangeRequest1);
 approvalChain.ProcessRequest(purchangeRequest2);
 approvalChain.ProcessRequest(purchangeRequest3);
+
+IBarCodeReader reader = new OldBarCodeReaderAdapter();
+reader.Read(null);
 
