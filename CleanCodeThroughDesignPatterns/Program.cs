@@ -18,3 +18,6 @@ paymentProcess.ExecuteStrategy(new PaymentRequest { Amount = 100 });
 
 var messageProcess = new StrategyContext<Message, MessageResponse>(new EmailMessageSender());
 messageProcess.ExecuteStrategy(new Message { Content = "Test MEssage", Email = "sree@gmail.com" });
+
+var discountProcess = new StrategyContext<Order, decimal>(new PrimeMemberDiscountStrategy());
+var discount = discountProcess.ExecuteStrategy(new Order { OrderId = 1, Amount = 1000 });

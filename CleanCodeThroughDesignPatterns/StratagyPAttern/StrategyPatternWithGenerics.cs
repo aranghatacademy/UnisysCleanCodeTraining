@@ -87,4 +87,29 @@ namespace CleanCodeThroughDesignPatterns.StratagyPAttern
         }
     }
 
+
+    public class Order
+    {
+        public int OrderId { get; set; }
+        public decimal Amount { get; set; }
+    }
+
+    public class PrimeMemberDiscountStrategy  : IStrategy<Order, decimal>
+    {
+        public decimal Execute(Order input)
+        {
+            // 20% discount for prime members
+            return input.Amount * 0.8m;
+        }
+    }
+
+    public class RegularMemberDiscountStrategy : IStrategy<Order, decimal>
+    {
+        public decimal Execute(Order input)
+        {
+            // 10% discount for regular members
+            return input.Amount * 0.9m;
+        }
+    }
+
 }
