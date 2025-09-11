@@ -5,9 +5,10 @@ using CleanCodeThroughDesignPatterns.StratagyPAttern;
 Console.WriteLine("How do you like to pay? (CreditCard/PayPal/UPI)");
 var paymentType = Console.ReadLine();
 
-IPaymentStratagy paymentStrategy = paymentType  == "CreditCard" ? new CreditCardPayment() :
-                         paymentType == "PayPal" ? new PayPalPayment() :
-                         paymentType == "UPI" ? new UPIPayment() : null;
+//FActory Method : Choose and create the instance based on the condition
+IPaymentStratagy paymentStrategy = PaymentStrategyFactory.CreatePaymentStratagy(paymentType);
 
+// Dependency Injection : Inject the dependency via constructor
+//Provide a stratagy during runtime which the processor will use
 var processor = new PaymentProcessorStrategy(paymentStrategy);
 processor.ProcessPayment(1000);
